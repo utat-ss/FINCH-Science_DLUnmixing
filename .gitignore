@@ -1,21 +1,75 @@
-# Byte-compiled / optimized / DLL files
+# =========================
+# Virtual env / env files
+# =========================
+.venv/
+venv/
+ENV/
+env/
+*.env
+.env
+
+# =========================
+# Jupyter / notebooks
+# =========================
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# =========================
+# Python cache / build
+# =========================
 __pycache__/
+**/__pycache__/
 *.py[cod]
-*.log
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+coverage/
+.coverage
+htmlcov/
+.python-version
+
+# =========================
+# Mac / Windows junk
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# VS Code / IDE
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Experiment artifacts (your repo-specific)
+# =========================
+runs/
+checkpoints/
+archive/
+logs/
+wandb/
+mlruns/
+tensorboard/
+lightning_logs/
+outputs/
+
+# common model/artifact files
+*.ckpt
 *.pth
-*.pkl
 *.pt
 *.onnx
-.DS_Store
+*.h5
+*.pkl
+*.pickle
+*.joblib
+*.npz
 
-# Virtual environments
-venv/
-.env/
-.venv/
-
-# Logs and outputs
-*.log
-
-# Tensorboard logs
-runs/*
-!runs/**/*.ipynb
